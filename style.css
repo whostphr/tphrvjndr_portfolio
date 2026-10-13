@@ -428,3 +428,58 @@ section[id], footer[id] { scroll-margin-top: 90px; }
   html { scroll-behavior: auto; }
   .glass-card, .badge__ring { animation: none; }
 }
+.project-card__featured-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card__featured-thumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+  padding: 40px;
+  overflow: hidden;
+  background: var(--blue);
+  text-align: center;
+}
+
+.project-card__featured-thumb::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--grid-back);
+  background-size: 96px 96px;
+  opacity: 1;
+}
+
+.project-card__featured-thumb span {
+  position: relative;
+  z-index: 2;
+  display: block;
+  max-width: 10ch;
+  color: #fff;
+  font-size: clamp(2.2rem, 5vw, 4.8rem);
+  font-weight: 900;
+  font-stretch: 125%;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+}
+
+.project-card__featured-link:hover .project-card__featured-thumb span {
+  color: var(--lime);
+}
+
+.project-card--featured {
+  max-width: 860px;
+  margin: 40px auto 0;
+  border: 3px solid var(--lime);
+  text-align: center;
+}
+
+.project-card--featured .project-card__body {
+  align-items: center;
+}
