@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Christopher 'Topher' Vijandre, BSIT student, designer and web developer.">
+  <meta name="theme-color" content="#0b3fe0">
+  <title>Topher Vijandre | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body id="top">
+
+  <header class="site-header">
+    <div class="header-bar">
+      <a href="#top" class="logo" aria-label="Topher Vijandre, back to top">
+        <span class="logo__main">Topher</span><span class="logo__tag">Vijandre</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">About Me</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode">
+        <span class="theme-toggle__icon" aria-hidden="true">&#9790;</span>
+        <span class="theme-toggle__label">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="shell">
+
+    <section id="about" class="about">
+      <div class="hero">
+        <div class="hero__stage">
+          <p class="hero__eyebrow">@tphrvjndr portfolio</p>
+
+          <h1 class="hero__title display" aria-label="TPHRVJNDR">
+            <span class="hero__line"><span class="hero__hash">#</span>TPHR</span>
+            <span class="hero__line">VJNDR</span>
+          </h1>
+
+          <figure class="glass-card glass-card--photo">
+            <img class="glass-card__photo" src="Vijandre,%20Christopher%20P%20(2026).jpg" alt="Photo of Christopher Vijandre" width="400" height="400">
+            <figcaption class="glass-card__caption">
+              <strong>Christopher V.</strong>
+              <span>BSIT &bull; WMAD</span>
+            </figcaption>
+          </figure>
+
+          <div class="glass-card glass-card--org">
+            <span class="glass-card__photo glass-card__initials" aria-hidden="true">MP</span>
+            <div class="glass-card__caption">
+              <strong>Media Productions</strong>
+              <span>Chairperson &bull; CICT LSC</span>
+            </div>
+          </div>
+
+          <svg class="arrow arrow--a" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+            <path d="M20 30C150 0 190 110 110 160M110 160L160 158M110 160L134 116"/>
+          </svg>
+          <svg class="arrow arrow--b" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+            <path d="M20 30C150 0 190 110 110 160M110 160L160 158M110 160L134 116"/>
+          </svg>
+
+          <a class="badge" href="#projects" aria-label="See my projects">
+            <svg class="badge__ring" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+              <circle class="badge__bg" cx="100" cy="100" r="100"/>
+              <path id="badge-path" d="M100 100m-70 0a70 70 0 1 1 140 0a70 70 0 1 1-140 0" fill="none"/>
+              <text class="badge__text"><textPath href="#badge-path" textLength="430">SEE MY PROJECTS &#8226; SEE MY PROJECTS &#8226; </textPath></text>
+            </svg>
+            <svg class="badge__icon" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+              <path d="M72 128C78 70 128 62 122 108M122 108L108 92M122 108L138 94"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="panel panel--top">
+        <h2 class="section-title display">About <span class="hl">Me</span></h2>
+
+        <div class="about-grid">
+          <article class="info-card">
+            <h3 class="info-card__title display">Hi, I'm Topher</h3>
+            <p>I'm Christopher Vijandre, but most people call me Topher. I'm a creative IT student who loves turning ideas into clean designs and working websites and apps.</p>
+          </article>
+
+          <article class="info-card">
+            <h3 class="info-card__title display">My Bio</h3>
+            <p>I'm a 3rd year BSIT student at Bulacan State University, majoring in Web and Mobile Application Development. I'm still growing as a coder, and I enjoy making what I build look good. Outside class, I do layouts, video editing, and technical directing.</p>
+          </article>
+
+          <article class="info-card">
+            <h3 class="info-card__title display">Work Experience</h3>
+            <ul class="role-list">
+              <li><strong>Chairperson, Media Productions</strong> CICT LSC</li>
+              <li><strong>Chief for Marketing</strong> AWS Student Builder Group, BulSU</li>
+              <li><strong>Church Youth Coordinator</strong> KKB Sumapa, Jesus Is Lord Churches</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="panel panel--bottom">
+      <h2 class="section-title display">My <span class="hl">Projects</span></h2>
+      <p class="section-lead">A few of my layouts and designs. More coming soon.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <a class="project-card__media" href="https://www.facebook.com/share/p/1QXwvEPGjf/" target="_blank" rel="noopener noreferrer" aria-label="View the PubMat post on Facebook">
+            <img src="Layout%20design.png" alt="Weekly Bible verse pubmat featuring 2 Corinthians 12:9, My Grace Is Sufficient" loading="lazy">
+          </a>
+          <div class="project-card__body">
+            <span class="project-card__tag">Layout Design</span>
+            <h3 class="project-card__title display">PubMatPosting for KKB BulSU</h3>
+            <p>A pubmat for our weekly Bible verse posting. It features the scripture from 2 Corinthians 12:9, "My Grace Is Sufficient."</p>
+            <a class="project-card__link" href="https://www.facebook.com/share/p/1QXwvEPGjf/" target="_blank" rel="noopener noreferrer">View the post on Facebook</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-card__media project-card__media--play" href="https://www.tiktok.com/@tphrhatesu/video/7693912143070121223" target="_blank" rel="noopener noreferrer" aria-label="Watch LuToph Serye on TikTok">
+            <img src="LuToph.png" alt="Thumbnail of the LuToph Serye video" loading="lazy">
+          </a>
+          <div class="project-card__body">
+            <span class="project-card__tag">Video Edit / Content</span>
+            <h3 class="project-card__title display">LuToph Serye</h3>
+            <p>A video series from my TikTok. I shoot, cut, and polish each episode myself, from the first clip to the final export.</p>
+            <a class="project-card__link" href="https://www.tiktok.com/@tphrhatesu" target="_blank" rel="noopener noreferrer">Watch more on TikTok</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="UIUX%20Design.png" alt="Redesigned BulSU HEIMS screens" loading="lazy">
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">UI/UX Design</span>
+            <h3 class="project-card__title display">BulSU HEIMS Redesign</h3>
+            <p>A class activity for our UI/UX subject. I redesigned the HEIMS screens with a cleaner layout, easier-to-read text, and simpler navigation.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <article class="project-card project-card--featured">
+        <video class="project-card__video" controls preload="metadata" playsinline>
+          <source src="INTRAMS.mp4" type="video/mp4">
+          Your browser can't play this video.
+        </video>
+        <div class="project-card__body">
+          <span class="project-card__tag">Featured Video</span>
+          <h3 class="project-card__title display">Intrams Video</h3>
+          <p>A video edit made for our Intrams. Press play to watch it.</p>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="site-footer shell">
+    <div class="site-footer__inner">
+      <h2 class="footer__title display"><span class="hero__line"><span class="hero__hash">#</span>Let's</span><span class="hero__line">Talk</span></h2>
+      <p class="footer__lead">Let's work together! Reach me on any of these.</p>
+
+      <ul class="contact-list">
+        <li>
+          <a class="contact-card" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=vijandrechristopher@gmail.com" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card__icon" aria-hidden="true">@</span>
+            <span class="contact-card__text"><span class="contact-card__label">Gmail</span><span class="contact-card__value">vijandrechristopher@gmail.com</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="contact-card" href="https://github.com/whostphr" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card__icon" aria-hidden="true">&lt;/&gt;</span>
+            <span class="contact-card__text"><span class="contact-card__label">GitHub</span><span class="contact-card__value">github.com/whostphr</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="contact-card" href="https://www.facebook.com/whosvjndr" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card__icon" aria-hidden="true">f</span>
+            <span class="contact-card__text"><span class="contact-card__label">Facebook</span><span class="contact-card__value">facebook.com/whosvjndr</span></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <section id="verse" class="verse shell" aria-labelledby="verse-title">
+    <div class="verse__inner">
+      <h2 id="verse-title" class="verse__title display">
+        <span class="hero__line">Seek</span>
+        <span class="hero__line"><span class="hl hl--dark">Him</span></span>
+        <span class="hero__line">First</span>
+      </h2>
+
+      <figure class="verse__quote">
+        <blockquote>
+          <p><sup>33</sup>But seek first his kingdom and his righteousness, and all these things will be given to you as well.</p>
+          <p><sup>34</sup>Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.</p>
+        </blockquote>
+        <figcaption>Matthew 6:33-34 (NIV)</figcaption>
+      </figure>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Christopher Vijandre. Built with HTML, CSS, and JavaScript.</p>
+        <a class="footer-bottom__top" href="#top">Back to top</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
